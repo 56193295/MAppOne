@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MAppOne</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_forget">ForgetActivity</string>
+    <string name="title_activity_frag">MainFragment</string>
+    <string name="title_activity_modity" >ModifyMe</string>
+    <string name="title_activity_reset">ResetActivity</string>
+
+
+</resources>

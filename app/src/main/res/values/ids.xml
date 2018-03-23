@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textview1" type="id" />
+    <item name="ly_content" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="fab" type="id" />
+    <item name="myprofile" type="id" />
+    <item name="mypro_image" type="id" />
+    <item name="content" type="id" />
+</resources>

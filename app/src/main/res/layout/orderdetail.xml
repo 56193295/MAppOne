@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_pick">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_light">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="预约信息明细" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="294dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:background="@color/bg_white">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="293dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="192dp"
+        android:background="@color/bg_white">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="342dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="286dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/background_light"
+            android:text="注意:已经打单的预约信息不能通过移动平台取消预约，必须到达现场或者联系仓储物流取消" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="取消预约" />
+    </RelativeLayout>
+
+</RelativeLayout>

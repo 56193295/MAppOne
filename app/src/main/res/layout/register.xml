@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistActivity"
+    android:background="@color/bg_pick">
+
+   <!-- 用户注册信息的界面-->
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/reset1"
+            android:layout_width="207dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="注册信息" />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="94dp"
+            android:layout_height="61dp"
+            android:background="@drawable/ic_launcher_background" />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_marginTop="80px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="姓名"
+            android:maxLength="16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editCode"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="身份证号码"
+            android:maxLength="20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editPwd"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="所在公司"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_Pwd1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="登陆密码"
+            android:inputType="textPassword"
+            android:maxLength="15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_Pwd2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="确认登陆密码"
+            android:inputType="textPassword"
+            android:maxLength="15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="20px">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="65dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:text="发送验证码" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp">
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:background="#bebebe"
+                android:gravity="center"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="15" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="请录入手机收到的验证码"
+            android:maxLength="6" />
+    </RelativeLayout>
+
+    <TableRow android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/regiBtn"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_btn_selector"
+            android:text="注册信息" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="80dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/true1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请按真实信息进行填写" />
+
+    </TableRow>
+</TableLayout>
