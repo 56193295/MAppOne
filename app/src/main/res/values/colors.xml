@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="background_light">#bebebe</color>
     <color name="color1">#40d9ff</color>
+    <color name="bg_blue">#55aabf</color>
 
     <color name="bg_black">#c1000000</color>
     <color name="bg_pick">#FFF59782</color>

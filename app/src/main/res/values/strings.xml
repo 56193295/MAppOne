@@ -5,6 +5,8 @@
     <string name="title_activity_frag">MainFragment</string>
     <string name="title_activity_modity" >ModifyMe</string>
     <string name="title_activity_reset">ResetActivity</string>
+    <string name="title_activity_submit">OrderSubmit</string>
+    <string name="title_activity_check">CheckActivity</string>
 
 
 </resources>

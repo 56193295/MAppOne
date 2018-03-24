@@ -1,133 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submit_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_pick">
+    tools:context=".CheckActivity">
 
-    <!--发运计划信息，预约提交-->
-    <RelativeLayout
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/background_light">
+        android:layout_height="41dp"
+        android:background="@color/background_light"
+        android:gravity="center"
+        android:text="发运计划信息" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="2dp"
-            android:gravity="center"
-            android:text="发运计划信息" />
-        <!--箭头按钮-->
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="58dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@color/background_light"
-            app:srcCompat="?android:attr/actionModeCloseDrawable" />
-    </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="323dp"
-        android:layout_height="203dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
-        android:background="@color/bg_white"
-        android:orientation="vertical">
-
-        <ExpandableListView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="189dp"
-            android:layout_weight="1"
-            android:groupIndicator="@null"></ExpandableListView>
-
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="312dp"
-        android:layout_height="87dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="157dp"
-        android:background="@color/bg_white">
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="328dp"
-        android:layout_height="54dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="72dp">
-
-    </RelativeLayout>
-
-    <!--底部多选和结算-->
-    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true">
 
         <CheckBox
-            android:id="@+id/checkAll"
-            android:layout_width="wrap_content"
+            android:id="@+id/shop_checkbox"
+            android:layout_width="25dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="15dp"
-            android:drawablePadding="5dp"
-            android:text="全选"
-            android:textColor="#6b6868"
-            android:textSize="18sp" />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="12dp" />
 
         <TextView
-            android:id="@+id/price"
-            android:layout_width="124dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/checkAll"
-            android:gravity="center"
-            android:text="总重(吨):0.00"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-
-        <LinearLayout
+            android:id="@+id/tv_ggs"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:background="#ff0000">
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="总载重:" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:paddingLeft="30dp"
-                android:text="去结算"
-                android:textColor="#ffffff"
-                android:textSize="22sp" />
+        <TextView
+            android:id="@+id/amount_ggs"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center" />
 
-            <TextView
-                android:id="@+id/checked_shop"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:paddingRight="30dp"
-                android:text="(0)"
-                android:textColor="#ffffff"
-                android:textSize="13sp" />
-        </LinearLayout>
-
-    </RelativeLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="提交预约" />
+    </LinearLayout>
 
 
+
+   <!-- 数据放置处-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
 </RelativeLayout>
