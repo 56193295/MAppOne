@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistActivity"
-    android:background="@color/bg_pick">
+    android:background="@color/bg_pick"
+    tools:context=".RegistActivity">
 
-   <!-- 用户注册信息的界面-->
+    <!-- 用户注册信息的界面-->
 
 
     <TableRow
@@ -34,12 +34,12 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="50dp"
-            android:layout_height="100dp" />
+            android:layout_height="70dp" />
     </TableRow>
 
     <RelativeLayout
         android:layout_width="50dp"
-        android:layout_marginTop="80px"
+        android:layout_marginTop="20px"
         android:gravity="center">
 
         <EditText
@@ -112,48 +112,34 @@
             android:maxLength="15" />
     </RelativeLayout>
 
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_marginTop="20px">
+        android:layout_width="313dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="40dp">
 
-        <RelativeLayout
-            android:layout_width="100dp"
-            android:layout_height="47dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="65dp">
+        <EditText
+            android:id="@+id/send_code"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/button"
+            android:background="#bebebe"
+            android:gravity="center"
+            android:hint="手机号"
+            android:maxLength="6" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:text="发送验证码" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="135dp"
-            android:layout_height="30dp"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="60dp">
-
-            <EditText
-                android:id="@+id/edit_phone"
-                android:layout_width="138dp"
-                android:layout_height="match_parent"
-                android:background="#bebebe"
-                android:gravity="center"
-                android:hint="手机号"
-                android:inputType="phone"
-                android:maxLength="15" />
-
-
-        </RelativeLayout>
+            android:layout_marginEnd="30dp"
+            android:text="发送验证码"
+            android:textSize="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -170,7 +156,8 @@
             android:maxLength="6" />
     </RelativeLayout>
 
-    <TableRow android:layout_marginTop="25dp"
+    <TableRow
+        android:layout_marginTop="25dp"
         android:gravity="center">
 
         <Button
@@ -182,7 +169,8 @@
 
     </TableRow>
 
-    <TableRow android:layout_marginTop="80dp"
+    <TableRow
+        android:layout_marginTop="80dp"
         android:gravity="center">
 
         <TextView

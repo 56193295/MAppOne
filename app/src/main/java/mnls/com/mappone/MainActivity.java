@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+
+/*登录的主页面*/
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button registBtn; //定义注册信息按钮

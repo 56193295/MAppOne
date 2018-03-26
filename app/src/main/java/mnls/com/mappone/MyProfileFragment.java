@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-/*底部菜单：我的资料的Fragment*/
+/*在底部菜单中我的资料所展示的Fragment*/
 public class MyProfileFragment extends Fragment{
 
     private Button modifyBtn;

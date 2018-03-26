@@ -6,7 +6,7 @@
 
     <gradient android:startColor="#dcdcdc"
         android:endColor="#dcdcdc"
-        android:centerColor="#40d9ff"
+        android:centerColor="#57863f"
         android:angle="90"
         android:centerX="0.4"
         android:centerY="0.4"

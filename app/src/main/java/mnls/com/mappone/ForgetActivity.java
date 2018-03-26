@@ -10,7 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-/*用户忘记密码跳转的界面*/
+/*用户点击忘记密码后跳转的界面*/
 public class ForgetActivity extends AppCompatActivity {
     private Button regiBtn;
 

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+/*注册界面的跳转的逻辑*/
 public class RegistActivity extends AppCompatActivity {
 
     private Button RegiBtn;

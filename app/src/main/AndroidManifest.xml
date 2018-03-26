@@ -41,17 +41,10 @@
             android:label="@string/title_activity_forget"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".OrderSubmit"
-            android:label="@string/title_activity_submit"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".CheckActivity"
             android:label="@string/title_activity_check"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TimeActivity"
-            android:label="@string/title_activity_time"
-            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

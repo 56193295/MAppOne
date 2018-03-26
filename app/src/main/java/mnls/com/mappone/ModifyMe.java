@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-/*修改个人资料*/
+/*用户登录后，修改个人资料的界面*/
 public class ModifyMe extends AppCompatActivity{
 
     private Button regiBtn1;
@@ -22,7 +22,7 @@ public class ModifyMe extends AppCompatActivity{
                 Intent i = new Intent(ModifyMe.this,MainFragment.class);
                 startActivity(i);
             }
-        });
+        });  //信息保存后跳转到主界面
     }
 
 }

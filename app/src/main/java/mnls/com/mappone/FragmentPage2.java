@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-/*底部导航第二个界面*/
+/*底部导航第二个界面，发运信息*/
 public class FragmentPage2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

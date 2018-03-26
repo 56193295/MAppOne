@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-/*用户登陆后重置密码的Activity*/
+/*用户登陆后重置密码的Activity逻辑*/
 public class ResetActivity extends AppCompatActivity{
 
     private Button resetBtn1;

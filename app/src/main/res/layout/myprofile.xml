@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_pick">
-    <!--个人信息的界面-->
+
+    <!--第三个fragment，我的资料个人信息的界面    2018/3/26 覃正鉴-->
 
     <RelativeLayout>
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_pick">
 
-    <!--用户登陆后修改密码的界面-->
+    <!--用户登陆后,在个人资料里，密码修改跳转到修改密码的界面-->
 
     <TableRow
         android:layout_height="100dp"

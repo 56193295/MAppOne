@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_pick">
 
-    <!--修改个人信息的界面-->
+    <!--我的资料里面，用户点击资料修改跳转到修改个人信息的界面-->
 
     <TableRow
         android:layout_height="100dp"

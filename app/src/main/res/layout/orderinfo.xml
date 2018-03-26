@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_pick">
 
-   <!-- 发送预约的界面-->
+   <!-- 发送预约的界面  2018/3/26 覃正鉴-->
 
     <TextView
         android:id="@+id/textView"
