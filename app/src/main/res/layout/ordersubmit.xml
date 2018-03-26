@@ -84,7 +84,7 @@
             android:id="@+id/dateChoose"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
-            android:layout_alignBottom="@+id/dateDisplay"
+            android:layout_alignBottom="@+id/dateDisplay1"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="100dp"
             android:text="选择日期"

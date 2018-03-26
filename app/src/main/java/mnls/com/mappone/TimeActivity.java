@@ -1,4 +1,4 @@
-package mnls.com.mappone.tool;
+package mnls.com.mappone;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-import mnls.com.mappone.MainActivity;
-import mnls.com.mappone.R;
+
+/*时期选择功能*/
 
 public class TimeActivity extends AppCompatActivity{
     int mYear, mMonth, mDay;
@@ -53,8 +53,6 @@ public class TimeActivity extends AppCompatActivity{
         /**
          * 设置日期 利用StringBuffer追加
          */
-
-
         private void display() {
             dateDisplay.setText(new StringBuffer().append(mYear).append("年").append(mMonth + 1).append("月").append(mDay).append("日"));
         }

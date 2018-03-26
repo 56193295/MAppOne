@@ -7,6 +7,7 @@
     <string name="title_activity_reset">ResetActivity</string>
     <string name="title_activity_submit">OrderSubmit</string>
     <string name="title_activity_check">CheckActivity</string>
+    <string name="title_activity_time">TimeActivity</string>
 
 
 </resources>
