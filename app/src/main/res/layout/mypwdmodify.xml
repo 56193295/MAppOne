@@ -15,27 +15,27 @@
 
         <TextView
             android:id="@+id/reset1"
-            android:layout_width="wrap_content"
+            android:layout_width="102dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="修改密码" />
 
     </TableRow>
+
     <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
         android:layout_marginTop="30dp"
         android:gravity="center">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="94dp"
-            android:layout_height="61dp"
-            android:background="@drawable/ic_launcher_background" />
+            android:layout_width="72dp"
+            android:layout_height="61dp" />
     </TableRow>
 
     <RelativeLayout
-        android:layout_marginTop="20px"
+        android:layout_marginTop="50px"
         android:gravity="center">
 
         <EditText

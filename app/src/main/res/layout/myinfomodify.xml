@@ -29,8 +29,7 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="94dp"
-            android:layout_height="61dp"
-            android:background="@drawable/ic_launcher_background" />
+            android:layout_height="61dp" />
     </RelativeLayout>
 
     <RelativeLayout
