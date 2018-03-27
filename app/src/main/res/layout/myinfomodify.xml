@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_pick">
+    android:background="@drawable/login_bg">
 
-    <!--我的资料里面，用户点击资料修改跳转到修改个人信息的界面-->
+    <!--我的资料里面，用户点击资料修改跳转到修改个人信息的界面 修改个人信息按钮3
+    第二次修改 2018/3/27 覃正鉴-->
 
     <TableRow
         android:layout_height="100dp"
-        android:gravity="center"
-        android:layout_marginTop="10dp">
+        android:background="@color/bg_gr">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="52dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_tou"
+            app:srcCompat="?android:attr/actionModeCloseDrawable" />
 
         <TextView
             android:id="@+id/reset1"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="修改个人信息" />
+            android:text="修改个人信息"
+            android:textColor="@color/text_white"
+            android:textSize="21dp" />
 
     </TableRow>
 
@@ -26,81 +38,138 @@
         android:layout_marginTop="20dp"
         android:gravity="center">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="94dp"
-            android:layout_height="61dp" />
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/login_edit_layout"
+        android:layout_width="290dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/joy"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="姓    名     "
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/input_name3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="手 机 号  "
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/input_phone3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="身份证号"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/input_code3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="所在公司 "
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/input_company3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
     <RelativeLayout
-        android:layout_width="20dp"
-        android:layout_marginTop="45px"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edit_code"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:hint="姓名"
-            android:inputType="textPassword"
-            android:maxLength="15" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_marginTop="20px"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edit_phone1"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:hint="手机号"
-            android:inputType="phone"
-            android:maxLength="15" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_marginTop="20px"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edit_shen"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:hint="身份证号"
-            android:inputType="phone"
-            android:maxLength="20" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_marginTop="20px"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edit_company"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:hint="所在公司"
-            android:inputType="text"
-            android:maxLength="20" />
-    </RelativeLayout>
-
-    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
         android:layout_marginTop="25dp"
         android:gravity="center">
 
         <Button
             android:id="@+id/regiBtn1"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
+            android:layout_width="173dp"
+            android:layout_height="34dp"
             android:background="@drawable/round_rect_btn_selector"
             android:text="信息保存" />
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--两个样式组合起来，使用selector资源-->
+<!--两个样式组合起来，使用selector资源  自定义button按钮  2018/3/27 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:drawable="@drawable/round_rect_btn_pressed"></item>

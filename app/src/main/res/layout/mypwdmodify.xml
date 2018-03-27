@@ -4,25 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_pick">
+    android:background="@drawable/login_bg">
 
-    <!--用户登陆后,在个人资料里，密码修改跳转到修改密码的界面-->
+    <!--用户登陆后,在个人资料里，密码修改跳转到修改密码的界面
+    修改密码按钮5-->
 
+    <!--顶部显示-->
     <TableRow
         android:layout_height="100dp"
         android:gravity="center"
-        android:layout_marginTop="10dp">
+        android:background="@color/bg_gr">
 
         <TextView
             android:id="@+id/reset1"
             android:layout_width="102dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="修改密码" />
+            android:textSize="21dp"
+            android:text="修改密码"
+            android:textColor="@color/text_white"/>
 
     </TableRow>
 
-    <TableRow
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:layout_marginTop="30dp"
@@ -30,56 +34,103 @@
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="72dp"
-            android:layout_height="61dp" />
-    </TableRow>
-
-    <RelativeLayout
-        android:layout_marginTop="50px"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edit_Pwd1"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#bebebe"
-            android:gravity="center"
-            android:hint="原登陆密码"
-            android:inputType="textPassword"
-            android:maxLength="15" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="82dp" />
     </RelativeLayout>
+   <!--内容-->
+    <LinearLayout
+        android:id="@+id/login_edit_layout"
+        android:layout_width="248dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/joy"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_marginTop="20px"
-        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edit_Pwd2"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#bebebe"
-            android:gravity="center"
-            android:hint="设置登陆密码"
-            android:inputType="textPassword"
-            android:maxLength="15" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="原始密码"
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
 
-    </RelativeLayout>
+            <EditText
+                android:id="@+id/loginpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:singleLine="true" />
+        </LinearLayout>
 
-    <RelativeLayout
-        android:layout_marginTop="20px"
-        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edit_Pwd5"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="#bebebe"
-            android:gravity="center"
-            android:hint="确认新登陆密码"
-            android:inputType="textPassword"
-            android:maxLength="15" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="新 密 码   "
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/input_pwd5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#fffbfbfb"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="确认密码 "
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/input_password5"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#fffbfbfb"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 
@@ -88,10 +139,10 @@
 
         <Button
             android:id="@+id/resetBtn1"
-            android:layout_width="111dp"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:background="@drawable/round_rect_btn_selector"
-            android:text="密码修改" />
+            android:text="确认修改" />
 
     </TableRow>
 

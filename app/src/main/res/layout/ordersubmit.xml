@@ -96,12 +96,12 @@
 
             <Spinner
                 android:id="@+id/spinner2"
-                android:layout_width="142dp"
-                android:layout_height="34dp"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="33dp"
-                android:entries="@array/spingarr"/>
+                android:entries="@array/spingarr"
+                android:gravity="center" />
         </RelativeLayout>
 
     </LinearLayout>

@@ -5,14 +5,17 @@
     <color name="colorAccent">#FF4081</color>
     <color name="background_light">#bebebe</color>
     <color name="color1">#40d9ff</color>
-    <color name="bg_blue">#55aabf</color>
+    <color name="bg_tou">#00000000</color>
 
+
+
+    <color name="bg_gr">#015f51</color>
     <color name="bg_black">#c1000000</color>
     <color name="bg_pick">#FFF59782</color>
     <color name="bg_white">#FFFFFF</color>
     <color name="bg_topbar">#f59782</color>
     <color name="bg_gray">#e7cf6c16</color>
-    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent">#00FFFF</color>
     <color name="text_gray">#8D7A71</color>
     <color name="text_white">#FFFFFF</color>
     <color name="text_yellow">#FFC800</color>

@@ -3,20 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_pick">
+    android:background="@drawable/main_bg">
 
    <!-- 发送预约的界面  2018/3/26 覃正鉴-->
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="51dp"
+        android:layout_height="37dp"
         android:layout_weight="1"
-        android:background="@color/background_light"
         android:gravity="center"
         android:text="发运预约" />
 
-    <!--箭头按钮-->
+ <!--箭头按钮-->
+ <ImageButton
+     android:id="@+id/imageButton2"
+     android:layout_width="52dp"
+     android:layout_height="37dp"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentTop="true"
+     android:background="@color/bg_tou"
+     app:srcCompat="?android:attr/actionModeCloseDrawable" />
 
  <android.support.v7.widget.RecyclerView
      android:layout_width="336dp"
@@ -30,10 +37,10 @@
 
  <RelativeLayout
      android:layout_width="match_parent"
-     android:layout_height="138dp"
+     android:layout_height="149dp"
      android:layout_alignParentStart="true"
      android:layout_alignParentBottom="true"
-     android:layout_marginBottom="39dp">
+     android:layout_marginBottom="29dp">
 
   <Button
       android:id="@+id/addBtn"
